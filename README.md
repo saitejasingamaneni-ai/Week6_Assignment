@@ -27,14 +27,13 @@ flask_app/
   app.py
   
   templates/
-  
     form.html
-    
     hello.html
     
 Run the Flask app:
 
 cd flask_app
+
 python app.py
 
 Access in browser:
@@ -108,6 +107,7 @@ Message model with text field
 Registered model in admin and added entries
 
 /messages/ → View to list all messages
+
 
 
 
