@@ -58,12 +58,12 @@ i)Create project & app:
 
       django-admin startproject django_lab
       cd django_lab
-      python manage.py startapp greetapp
+      python manage.py startapp app
 
 
 ii)Configure:
 
-      Add 'greetapp' to INSTALLED_APPS in django_lab/settings.py
+      Add 'app' to INSTALLED_APPS in django_lab/settings.py
       
       Add app URLs in django_lab/urls.py:
       
@@ -109,6 +109,7 @@ vi)Implemented Features:
       Registered model in admin and added entries
       
       /messages/ → View to list all messages
+
 
 
 
