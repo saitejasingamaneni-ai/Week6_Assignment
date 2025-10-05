@@ -52,61 +52,62 @@ Implemented Features:
 
 **Part 2: Django – Minimal Web Application**
 
-Create project & app:
+i)Create project & app:
 
-django-admin startproject django_lab
-cd django_lab
-python manage.py startapp greetapp
-
-
-Configure:
-
-Add 'greetapp' to INSTALLED_APPS in django_lab/settings.py
-
-Add app URLs in django_lab/urls.py:
-
-from django.contrib import admin
-from django.urls import path, include
-
-urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', include('app.urls')),
-]
+      django-admin startproject django_lab
+      cd django_lab
+      python manage.py startapp greetapp
 
 
-Migrate and create superuser:
+ii)Configure:
 
-python manage.py makemigrations
-python manage.py migrate
-python manage.py createsuperuser
+      Add 'greetapp' to INSTALLED_APPS in django_lab/settings.py
+      
+      Add app URLs in django_lab/urls.py:
+      
+      from django.contrib import admin
+      from django.urls import path, include
+      
+      urlpatterns = [
+          path('admin/', admin.site.urls),
+          path('', include('app.urls')),
+      ]
 
 
-Run the Django server:
+iii)Migrate and create superuser:
 
-python manage.py runserver
+      python manage.py makemigrations
+      python manage.py migrate
+      python manage.py createsuperuser
 
 
-Access in browser:
+iv)Run the Django server:
 
-Home: http://127.0.0.1:8000/
+      python manage.py runserver
 
-Dynamic greeting: /greet/<name>/
 
-Messages list: /messages/
+v)Access in browser:
 
-Admin panel: /admin/ (login with superuser)
+      Home: http://127.0.0.1:8000/
+      
+      Dynamic greeting: /greet/<name>/
+      
+      Messages list: /messages/
+      
+      Admin panel: /admin/ (login with superuser)
 
-Implemented Features:
+vi)Implemented Features:
 
-/ → Home page with "Hello from Django!"
+      / → Home page with "Hello from Django!"
+      
+      /greet/<name>/ → Dynamic greeting using Django templates
+      
+      Message model with text field
+      
+      Registered model in admin and added entries
+      
+      /messages/ → View to list all messages
 
-/greet/<name>/ → Dynamic greeting using Django templates
-
-Message model with text field
-
-Registered model in admin and added entries
-
-/messages/ → View to list all messages
 
 
 
