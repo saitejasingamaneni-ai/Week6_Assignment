@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+<body>
+  <h1>Messages</h1>
+  <ul>
+  {% for msg in messages %}
+    <li>{{ msg.text }}</li>
+  {% empty %}
+    <li>No messages yet.</li>
+  {% endfor %}
+  </ul>
+</body>
+</html>

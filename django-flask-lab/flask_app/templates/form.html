@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+<head><meta charset="utf-8"><title>Greet Form</title></head>
+<body>
+  <h1>Enter your name</h1>
+  <form method="post" action="{{ url_for('greet_form') }}">
+    <input type="text" name="name" placeholder="Your name">
+    <button type="submit">Greet me</button>
+  </form>
+</body>
+</html>
