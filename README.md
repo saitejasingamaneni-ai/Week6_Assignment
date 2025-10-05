@@ -10,8 +10,12 @@
 1. **Create and activate a virtual environment** (optional but recommended):
    
    python -m venv venv
+   
    source venv/bin/activate   # Linux/macOS
+   
    venv\Scripts\activate      # Windows PowerShell
+
+   
 **2. Install required packages:**
 
 pip install Flask Django
@@ -19,10 +23,15 @@ pip install Flask Django
 Part 1: Flask – Simple Web Application
 Project Structure:
 flask_app/
+
   app.py
+  
   templates/
+  
     form.html
+    
     hello.html
+    
 Run the Flask app:
 
 cd flask_app
@@ -99,5 +108,6 @@ Message model with text field
 Registered model in admin and added entries
 
 /messages/ → View to list all messages
+
 
 
