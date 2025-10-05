@@ -18,37 +18,39 @@
    
 **2. Install required packages:**
 
-pip install Flask Django
+   pip install Flask Django
 
 Part 1: Flask – Simple Web Application
-Project Structure:
-flask_app/
 
-  app.py
-  
-  templates/
-    form.html
-    hello.html
+i)Project Structure:
+      flask_app/
+        app.py
+        
+        templates/
+        
+          form.html
+          
+          hello.html
     
-Run the Flask app:
+ii)Run the Flask app:
 
-cd flask_app
+      cd flask_app
+      
+      python app.py
 
-python app.py
+iii)Access in browser:
 
-Access in browser:
+      Home: http://127.0.0.1:5000/
+      
+      Form: http://127.0.0.1:5000/greet
 
-Home: http://127.0.0.1:5000/
+iv)Implemented Features:
 
-Form: http://127.0.0.1:5000/greet
-
-Implemented Features:
-
-/ → Home route with "Welcome to Flask!"
-
-/hello/<name> → Dynamic greeting using hello.html
-
-/greet → Form to enter name and redirect to greeting
+      / → Home route with "Welcome to Flask!"
+      
+      /hello/<name> → Dynamic greeting using hello.html
+      
+      /greet → Form to enter name and redirect to greeting
 
 **Part 2: Django – Minimal Web Application**
 
@@ -107,6 +109,7 @@ vi)Implemented Features:
       Registered model in admin and added entries
       
       /messages/ → View to list all messages
+
 
 
 
